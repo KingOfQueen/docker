@@ -18,8 +18,10 @@
 # In addition to including Metasploit Framework, the image also includes Nmap and tmux.
 #
 
-FROM ubuntu:14.04
+FROM phusion/baseimage:0.9.19
 MAINTAINER Phocean <jc@phocean.net>
+
+CMD ["/sbin/my_init"]
 
 WORKDIR /opt
 USER root
